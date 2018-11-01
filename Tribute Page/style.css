@@ -1,0 +1,67 @@
+/* Just for removing margins */
+#body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+  /* Page's Title */
+  #title {
+    text-align: center;
+    font-family: 'Alegreya', 'sans-serif';
+  }
+
+
+  /* Image's Section */
+  #img-div {
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-content: center;
+  }
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 1px solid;
+  }
+  #img-caption {
+    text-align: center;
+    font-family: 'Alegreya', 'sans-serif';
+    font-size: 15px;
+  }
+
+
+  /* Ali's Timeline */
+  #tribute-info {
+    margin: auto;
+    background: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  #list-order {
+    width: 600px;
+    margin: auto;
+    font-family: 'Alegreya', 'sans-serif';
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 700px) {
+    #list-order {
+      width: 300px;
+    }
+  }
+
+
+  /* External link and famous quote. */
+  #quote {
+    text-align: center;
+    font-family: 'Alegreya', 'sans-serif';
+    font-style: italic;
+  }
+  #external-link {
+    text-align: center;
+    font-family: 'Alegreya', 'sans-serif';
+    font-size: 15px;
+  }
+
