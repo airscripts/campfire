@@ -1,0 +1,69 @@
+
+
+/* Content */
+#body {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 320px auto;
+	grid-template-areas: 
+		'navbar documentation';
+	font-family: 'Trebuchet MS';
+}
+
+	
+	/* Main Content */
+	#main-doc {
+		grid-area: documentation;
+		margin-left: 20px;
+	}
+	.paragraphs {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.codes-div {
+		background: #f0f0f0;
+		margin: 20px 40px 20px 40px;
+		padding: 20px 0 20px 20px;
+	}
+
+
+	/* Navigation Bar */
+	#navbar {
+		grid-area: navbar;
+		margin-left: 20px;
+		margin-right: 20px;
+		position: fixed;
+	}
+	.nav-link {
+		display: block;
+		text-decoration: none;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+@media (max-width: 700px) {
+	
+	
+	/* Content */
+	#body {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 250px auto;
+		grid-template-areas: 
+			'navbar'
+			'documentation';
+		font-family: 'Trebuchet MS';
+	}
+
+
+	/* Navigation Bar */
+	#navbar {
+		grid-area: navbar;
+		margin-left: 20px;
+		margin-right: 20px;
+		position: relative;
+		text-align: center;
+		overflow-y: auto;
+	}
+}
