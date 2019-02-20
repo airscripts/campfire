@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div id="quote-box">
+          <h4 id="text"><q>This is a random quote.</q></h4>
+          <p id="author">- Piero Petralla</p>
+
+          <div className="button-share-new">
+            <button className="btn btn-dark" id="new-quote">New Quote</button>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet?text=Hello%20world"><button className="fa fa-twitter btn btn-dark"></button></a>
+          </div>
+        </div>
       </div>
     );
   }
