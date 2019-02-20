@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <div id="quote-box">
           <h4 id="text"><q>This is a random quote.</q></h4>
-          <p id="author">- Piero Petralla</p>
+          <p id="author">- Rossella Panaro</p>
 
           <div className="button-share-new">
             <button className="btn btn-dark" id="new-quote">New Quote</button>
