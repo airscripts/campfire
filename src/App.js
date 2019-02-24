@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/font-awesome/css/font-awesome.min.css';
+import { Provider } from 'react-redux';
+import Quotes from './components/randomQuotesComponent';
+import { ConfigureStore } from './redux/configureStore';
 import './App.css';
+
+const store = ConfigureStore();
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div id="quote-box">
-          <h4 id="text"><q>This is a random quote.</q></h4>
-          <p id="author">- Rossella Panaro</p>
-
-          <div className="button-share-new">
-            <button className="btn btn-dark" id="new-quote">New Quote</button>
-            <a id="tweet-quote" href="https://twitter.com/intent/tweet?text=Not_Working"><button className="fa fa-twitter btn btn-dark"></button></a>
-          </div>
-        </div>
-      </div>
+      <Provider store={store}>
+        <Quotes />
+      </Provider>
     );
   }
 }
