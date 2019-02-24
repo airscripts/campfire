@@ -1,8 +1,9 @@
 import * as ActionTypes from './actionTypes';
 
-export const generateRandomQuoteAfterClick = (quote) => {
-  return {
+export const generateRandomQuoteAfterClick = (author, text) => ({
     type: ActionTypes.GENERATE_RANDOM_QUOTE,
-    payload: quote
-  }
-}
+    payload: {
+        author: author,
+        text: text
+    }
+});
