@@ -1,11 +1,12 @@
 import * as ActionTypes from './actionTypes';
 
 export const randomQuotes = (state = { errMess: null, quotes: [] }, action) => {
-  console.log(action);
-  console.log('h');
   switch (action.type) {
-    case ActionTypes.GENERATE_RANDOM_QUOTE: 
-      return {...state, errMess: null, quotes: action.payload}
+    case ActionTypes.GENERATE_REQUEST: 
+      return state;
+    case ActionTypes.GENERATE_SUCCESS:
+      let randomNumber = Math.floor(Math.random() * (action.payload.quotes.length - 0) + 0);
+      return {...state, errMess: null, quotes: action.payload.quotes[randomNumber]}
     default:
       return state;
   }

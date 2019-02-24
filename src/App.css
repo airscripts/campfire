@@ -8,7 +8,14 @@
   justify-content: center;
   font-family: 'Quicksand';
   color: #282c34;
+  animation: fadein 2s;
 }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 
 .button-share-new {
   display: flex;
