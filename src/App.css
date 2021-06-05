@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator__container {
+  height: 400px;
+  width: 320px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator__screen {
+  height: 80px;
+  background-color: teal;
+}
+
+.calculator__digits {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 64px 64px 64px 64px 64px;
+  grid-template-areas: 
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+#clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: clear;
+}
+
+#add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: add;
+}
+
+#subtract {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: subtract;
+}
+
+#multiply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: multiply;
+}
+
+#divide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: divide;
+}
+
+#equals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: equals;
+}
+
+#decimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: decimal;
+}
+
+#zero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: zero;
+}
+
+#one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: one;
+}
+
+#two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: two;
+}
+
+#three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: three;
+}
+
+#four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: four;
+}
+
+#five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: five;
+}
+
+#six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: six;
+}
+
+#seven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: seven;
+}
+
+#eight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: eight;
+}
+
+#nine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  grid-area: nine;
 }
