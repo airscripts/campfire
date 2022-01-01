@@ -27,6 +27,10 @@ function App() {
 
         <button id="session-increment">+</button>
       </div>
+
+      <div style={{ marginTop: 50 }}>
+        <p id="time-label">Session</p>
+      </div>
     </div>
   );
 }
