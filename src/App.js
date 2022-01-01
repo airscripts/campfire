@@ -1,8 +1,14 @@
+import { useState } from "react";
+
 function App() {
+  const [clockBreak, setClockBreak] = useState(5);
+
   return (
     <div id="app">
       <div>
         <p id="break-label">Break Length</p>
+        <p id="break-length">{clockBreak}</p>
+        
         <button id="break-decrement" style={{ marginRight: 10 }}>
           -
         </button>
