@@ -1,22 +1,45 @@
-import { useEffect, useState } from "react";
+import { useRef } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   const [rest, setRest] = useState(5);
   const [session, setSession] = useState(25);
-  const [minutes, setMinutes] = useState(session);
+  const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
+  const [typology, setTypology] = useState("session");
   const [status, setStatus] = useState("stop");
+  const audioRef = useRef();
 
   useEffect(() => {
     let interval;
 
     if (!minutes && !seconds) {
-      return;
+      audioRef.current.play();
+
+      switch (typology) {
+        case "session":
+          setMinutes(rest);
+          setSeconds(0);
+          setTypology("break");
+          return;
+
+        case "break":
+          setMinutes(session);
+          setSeconds(0);
+          setTypology("session");
+          return;
+
+        default:
+          return;
+      }
     }
 
     if (status === "play") {
       interval = setInterval(() => {
-        console.log(seconds);
+        if (!minutes && !seconds) {
+          return;
+        }
 
         if (!seconds) {
           setSeconds(59);
@@ -32,7 +55,7 @@ function App() {
     return () => {
       clearInterval(interval);
     };
-  }, [status, seconds]);
+  }, [status, typology, seconds]);
 
   return (
     <div id="app">
@@ -43,14 +66,14 @@ function App() {
         <button
           id="break-decrement"
           style={{ marginRight: 10 }}
-          onClick={() => setRest(setBreakTime(rest, "-"))}
+          onClick={() => setTime(rest, "break", "-")}
         >
           -
         </button>
 
         <button
           id="break-increment"
-          onClick={() => setRest(setBreakTime(rest, "+"))}
+          onClick={() => setTime(rest, "break", "+")}
         >
           +
         </button>
@@ -63,21 +86,23 @@ function App() {
         <button
           id="session-decrement"
           style={{ marginRight: 10 }}
-          onClick={() => setMinutes(setSessionTime(minutes, "-"))}
+          onClick={() => setTime(minutes, "session", "-")}
         >
           -
         </button>
 
         <button
           id="session-increment"
-          onClick={() => setMinutes(setSessionTime(minutes, "+"))}
+          onClick={() => setTime(session, "session", "+")}
         >
           +
         </button>
       </div>
 
       <div style={{ marginTop: 50 }}>
-        <p id="timer-label">Session</p>
+        <p id="timer-label">
+          {typology.charAt(0).toUpperCase() + typology.slice(1)}
+        </p>
 
         <p id="time-left">
           {renderTime(minutes)}:{renderTime(seconds)}
@@ -85,7 +110,11 @@ function App() {
       </div>
 
       <div>
-        <button id="start_stop" onClick={() => play()}>
+        <button
+          id="start_stop"
+          style={{ marginRight: 10 }}
+          onClick={() => play()}
+        >
           {status === "stop" ? "P" : "S"}
         </button>
 
@@ -93,49 +122,66 @@ function App() {
           R
         </button>
       </div>
+
+      <audio
+        id="beep"
+        ref={audioRef}
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+      ></audio>
     </div>
   );
 
   function play() {
-    status === "stop" ? setStatus("play") : setInitialState();
+    status === "stop" ? setStatus("play") : setStatus("stop");
   }
 
   function reset() {
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+
     setInitialState();
   }
 
   function setInitialState() {
     setRest(5);
     setSession(25);
-    setMinutes(session);
+    setMinutes(25);
     setSeconds(0);
     setStatus("stop");
+    setTypology("session");
   }
 
-  function setBreakTime(time, operator) {
+  function setTime(time, type, operator) {
+    if (status === "play") {
+      return;
+    }
+
     switch (time) {
       case 1:
-        return operator === "+" ? time + 1 : time;
+        time = operator === "+" ? time + 1 : time;
+        break;
 
       case 60:
-        return operator === "+" ? time : time - 1;
+        time = operator === "+" ? time : time - 1;
+        break;
 
       default:
-        return operator === "+" ? time + 1 : time - 1;
+        time = operator === "+" ? time + 1 : time - 1;
+        break;
     }
-  }
 
-  function setSessionTime(time, operator) {
-    switch (time) {
-      case 0:
-        return operator === "+" ? time + 1 : time;
-
-      case 60:
-        return operator === "+" ? time : time - 1;
-
-      default:
-        return operator === "+" ? time + 1 : time - 1;
+    if (type === "session") {
+      setSession(time);
+      setMinutes(time);
+      return;
     }
+
+    if (type === "break") {
+      setRest(time);
+      return;
+    }
+
+    return;
   }
 
   function renderTime(time) {
