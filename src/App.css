@@ -1,0 +1,62 @@
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -100px;
+}
+
+#app-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+#app-break-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-session {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-session-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-button {
+  margin-right: 25px;
+  font-size: 18px;
+  width: 50px;
+}
