@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import "./App.css";
+
 function App() {
   const [rest, setRest] = useState(5);
   const [session, setSession] = useState(25);
@@ -59,47 +61,77 @@ function App() {
 
   return (
     <div id="app">
-      <div>
-        <p id="break-label">Break Length</p>
-        <p id="break-length">{rest}</p>
+      <div id="app-settings">
+        <div id="app-break">
+          <div id="app-break-contents">
+            <p id="break-label" style={{ fontSize: 18 }}>
+              Break Length
+            </p>
 
-        <button
-          id="break-decrement"
-          style={{ marginRight: 10 }}
-          onClick={() => setTime(rest, "break", "-")}
-        >
-          -
-        </button>
+            <p id="break-length" style={{ fontSize: 18 }}>
+              {rest}
+            </p>
+          </div>
 
-        <button
-          id="break-increment"
-          onClick={() => setTime(rest, "break", "+")}
-        >
-          +
-        </button>
+          <div id="app-break-buttons">
+            <button
+              id="break-decrement"
+              className="btn btn-light settings-button"
+              onClick={() => setTime(rest, "break", "-")}
+            >
+              -
+            </button>
+
+            <button
+              id="break-increment"
+              className="btn btn-light settings-button"
+              style={{ marginRight: 0 }}
+              onClick={() => setTime(rest, "break", "+")}
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        <div id="app-session">
+          <div id="app-session-contents">
+            <p id="session-label" style={{ fontSize: 18 }}>
+              Session Length
+            </p>
+
+            <p id="session-length" style={{ fontSize: 18 }}>
+              {session}
+            </p>
+          </div>
+
+          <div id="app-session-buttons">
+            <button
+              id="session-decrement"
+              className="btn btn-light settings-button"
+              onClick={() => setTime(minutes, "session", "-")}
+            >
+              -
+            </button>
+
+            <button
+              id="session-increment"
+              className="btn btn-light settings-button"
+              style={{ marginRight: 0 }}
+              onClick={() => setTime(session, "session", "+")}
+            >
+              +
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div style={{ marginTop: 50 }}>
-        <p id="session-label">Session Length</p>
-        <p id="session-length">{session}</p>
-
-        <button
-          id="session-decrement"
-          style={{ marginRight: 10 }}
-          onClick={() => setTime(minutes, "session", "-")}
-        >
-          -
-        </button>
-
-        <button
-          id="session-increment"
-          onClick={() => setTime(session, "session", "+")}
-        >
-          +
-        </button>
-      </div>
-
-      <div style={{ marginTop: 50 }}>
+      <div
+        id="app-clock"
+        style={{
+          marginTop: 50,
+          fontSize: 36,
+        }}
+      >
         <p id="timer-label">
           {typology.charAt(0).toUpperCase() + typology.slice(1)}
         </p>
@@ -109,17 +141,27 @@ function App() {
         </p>
       </div>
 
-      <div>
+      <div id="app-actions">
         <button
           id="start_stop"
-          style={{ marginRight: 10 }}
+          className="btn"
+          style={{ marginRight: 10, fontSize: 36 }}
           onClick={() => play()}
         >
-          {status === "stop" ? "P" : "S"}
+          {status === "stop" ? (
+            <i className="fas fa-play" style={{ color: "white" }}></i>
+          ) : (
+            <i className="fas fa-stop" style={{ color: "white" }}></i>
+          )}
         </button>
 
-        <button id="reset" onClick={() => reset()}>
-          R
+        <button
+          id="reset"
+          className="btn"
+          style={{ fontSize: 36 }}
+          onClick={() => reset()}
+        >
+          <i className="fas fa-redo" style={{ color: "white" }}></i>
         </button>
       </div>
 
