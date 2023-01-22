@@ -2,7 +2,7 @@ import { Provider } from 'react-redux';
 import React, { Component } from 'react';
 
 import Quotes from './components/randomQuotesComponent';
-import { ConfigureStore } from './redux/configureStore';
+import { ConfigureStore } from './redux/store';
 
 import './App.css';
 
