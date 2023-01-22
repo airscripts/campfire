@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 🎉 1.4.0
 
 ### What's Changed
+* feat(rwd): add tribute page project by @Airscripts in https://github.com/Airscripts/campfire/pull/31
+
+**Full Changelog**: https://github.com/Airscripts/campfire/commits/1.5.0
+&nbsp;
+
+## 🎉 1.4.0
+
+### What's Changed
 * feat(rwd): add product landing page project by @Airscripts in https://github.com/Airscripts/campfire/pull/29
 
 **Full Changelog**: https://github.com/Airscripts/campfire/compare/1.3.0...1.4.0  
