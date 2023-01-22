@@ -2,19 +2,18 @@ fetch('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
   .then(response => response.json())
 
   .then(json => {
-    let data = json.data;
     let svg = null;
     let title = null;
+    let yAxis = null;
+    let xAxis = null;
+    let yScale = null;
+    let gyAxis = null;
+    let xScale = null;
+    let gxAxis = null;
+
+    let data = json.data;
     let height = 500;
     let width = 1000;
-
-    let yScale = null;
-    let yAxis = null;
-    let gyAxis = null;
-
-    let xScale = null;
-    let xAxis = null;
-    let gxAxis = null;
 
     svg = d3.select("body")
       .append("svg")
