@@ -17,7 +17,10 @@ https://github.com/Airscripts/campfire/compare/1.0.0...1.1.0
 ## 🎉 1.0.0
 
 ### What's Changed
-* feat: add campfire base structure
+* feat: add curriculum base structure by @Airscripts in #4
+
+### New Contributors
+* @Airscripts made their first contribution in https://github.com/Airscripts/campfire/pull/4
 
 ### Full Changelog 
 https://github.com/Airscripts/campfire/commits/1.0.0
