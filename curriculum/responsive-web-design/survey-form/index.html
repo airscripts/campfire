@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body id="body">
+  <div id="title-div">
+    <h1 id="title">Survey Form</h1>
+  </div>
+
+  <main id="form-section">
+    <div id="description-div">
+      <p id="description">This is a survey for Turtlecode</p>
+    </div>
+
+    <div id="form-div">
+      <form id="survey-form">
+        <div class="position">
+          <label id="name-label" class="survey-format">* Name </label>
+          <input id="name" class="input-format" type="text" placeholder=" Enter your name." required><br><br>
+        </div>
+
+        <div class="position">
+          <label id="email-label" class="survey-format">* Email </label>
+          <input id="email" class="input-format" type="email" placeholder=" Enter your email." required><br><br>
+        </div>
+
+        <div class="position">
+          <label id="number-label" class="survey-format">* Age </label>
+          <input id="number" class="input-format" type="number" min="18" max="70" placeholder=" Age"><br><br>
+        </div>
+
+        <div class="position">
+          <label id="dropdown-label" class="survey-format">What's your current role? </label>
+
+          <select id="dropdown" class="input-format">
+            <option value="" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="ftj">Full Time Job</option>
+            <option value="nochoice">Prefer not to say</option>
+          </select>
+        </div>
+
+        <br><br>
+        <div class="wrapper-1">
+          <div class="sub-wrapper-1">
+            <label id="radio-label" class="survey-format">Would you recommend Turtlecode to your friends?</label>
+          </div>
+
+          <div class="sub-wrapper-2">
+            <ul class="unlist">
+              <li><input class="check-1" type="radio" name="recommend" value="no">No, I wouldn't</li>
+              <li><input class="check-1" type="radio" name="recommend" value="maybe"> Maybe</li>
+              <li><input class="check-1" type="radio" name="recommend" value="yes">Yes, for sure</li>
+            </ul>
+          </div>
+        </div>
+
+        <br>
+        <div class="wrapper-1">
+          <div class="sub-wrapper-1">
+            <label id="check-label">Things that should be improved:</label>
+          </div>
+
+          <div class="sub-wrapper-2">
+            <ul class="unlist">
+              <li><input type="checkbox" name="choice-1" value="courses">Courses</li>
+              <li><input type="checkbox" name="choice-2" value="news">News</li>
+              <li><input type="checkbox" name="choice-3" value="projects">Projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <br><br>
+        <div id="textarea-div">
+          <label id="textarea-label">Additional comments: <br><br></label>
+          <textarea id="textarea" rows="4" cols="50"></textarea>
+        </div>
+
+        <br><br>
+        <div id="submit-div">
+          <input type="submit" id="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
