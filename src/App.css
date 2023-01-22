@@ -1,17 +1,17 @@
 .calculator {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
   background-color: #1e2326;
 }
 
 .calculator__container {
-  height: 440px;
   width: 320px;
-  background-color: white;
-  border-radius: 5px;
+  height: 440px;
   overflow: hidden;
+  border-radius: 5px;
+  background-color: white;
   box-shadow: 0px 0px 100px #0f1012;
 }
 
@@ -24,6 +24,7 @@
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 64px 64px 64px 64px 64px;
+
   grid-template-areas: 
     "clear clear divide multiply"
     "seven eight nine subtract"
@@ -34,183 +35,183 @@
 
 #display__digits {
   display: block;
-  color: #1e2326;
   font-size: 32px;
+  color: #1e2326;
   margin-top: 10px;
   margin-left: 15px;
 }
 
 #clear {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1e2326;
   color: #fafafa;
   font-size: 18px;
   grid-area: clear;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #add {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: add;
   color: #fafafa;
   font-size: 18px;
-  background-color: #5e4bb6;
-  grid-area: add;
+  align-items: center;
   border-color: #6152a3;
+  justify-content: center;
+  background-color: #5e4bb6;
 }
 
 #subtract {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #5e4bb6;
+  align-items: center;
   grid-area: subtract;
+  justify-content: center;
   border-color: #6152a3;
+  background-color: #5e4bb6;
 }
 
 #multiply {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fafafa;
   font-size: 18px;
-  background-color: #5e4ab5;
+  color: #fafafa;
+  align-items: center;
   grid-area: multiply;
+  justify-content: center;
   border-color: #6152a3;
+  background-color: #5e4ab5;
 }
 
 #divide {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #5e4bb6;
   grid-area: divide;
+  align-items: center;
   border-color: #6152a3;
+  justify-content: center;
+  background-color: #5e4bb6;
 }
 
 #equals {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #1e2326;
   font-size: 18px;
-  background-color: #fec208;
   grid-area: equals;
+  align-items: center;
+  justify-content: center;
   border-color: #e3b66d;
+  background-color: #fec208;
 }
 
 #decimal {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: decimal;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #zero {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: zero;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #one {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
-  font-size: 18px;
-  background-color: #1e2326;
   grid-area: one;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #two {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
-  font-size: 18px;
-  background-color: #1e2326;
   grid-area: two;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #three {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: three;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #four {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: four;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #five {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: five;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #six {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
-  font-size: 18px;
-  background-color: #1e2326;
   grid-area: six;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #seven {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: seven;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #eight {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: eight;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
 
 #nine {
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fafafa;
   font-size: 18px;
-  background-color: #1e2326;
   grid-area: nine;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
 }
