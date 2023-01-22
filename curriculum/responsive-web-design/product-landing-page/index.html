@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-	<title>Product Landing Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
 </head>
+
 <body id="body">
-	<!-- Header Section -->
-	<header id="header">
-		<div class="header-div">
-			<!-- Logo -->
-			<div id="header-sub-1">
-				<img id="header-img" src="binary-code.png"/>
-				<p id="header-text">B1ts</p>
-			</div>
+  <header id="header">
+    <div class="header-div">
+      <div id="header-sub-1">
+        <img id="header-img" src="binary-code.png" />
+        <p id="header-text">B1ts</p>
+      </div>
 
-			<!-- Navbar -->
-			<nav id="nav-bar">
-				<button type="button" id="features" class="nav-link"><a class="links" href="#presentation-div">Features</a>
-				<button type="button" id="howitworks" class="nav-link"><a class="links" href="#work-title">How It Works</a>
-				<button type="button" id="pricing" class="nav-link"><a class="links" href="#video-div">Pricing</a>
-			</nav>
-		</div>
+      <nav id="nav-bar">
+        <button type="button" id="features" class="nav-link">
+          <a class="links" href="#presentation-div">Features</a>
+        </button>
 
-		<!-- Main content -->
-		<div id="presentation-div">
-			<h2 id="title">Wonderful courses at a low price</h2>
-			<p id="description">Join our community and get a job</p>
-			<p id="description-2">It's easy, just write your e-mail below and follow the instructions</p>
-			<form id="form" action="https://www.freecodecamp.org/email-submit">
-				<div id="email-div">
-					<input type="email" id="email" placeholder="Insert your e-mail here." 	required>
-				</div>
+        <button type="button" id="howitworks" class="nav-link">
+          <a class="links" href="#work-title">How It Works</a>
+        </button>
 
-				<div id="submit-div">
-					<input type="submit" id="submit" value="Send">
-				</div>
-			</form>
-		</div>
+        <button type="button" id="pricing" class="nav-link">
+          <a class="links" href="#video-div">Pricing</a>
+        </button>
+      </nav>
+    </div>
 
-		<!-- Courses Section -->
-		<div id="main-list">
-			<div id="codeimg-div">
-				<img id="code-img" src="code.svg"/>
-			</div>
+    <div id="presentation-div">
+      <h2 id="title">Wonderful courses at a low price</h2>
+      <p id="description">Join our community and get a job</p>
+      <p id="description-2">It's easy, just write your e-mail below and follow the instructions</p>
 
-			<div id="codetitle-div">
-				<p id="code-title">Perfect Courses</p>
-				<p id="code-text">Learn now very fast and in a smart way a language.</p>
-			</div>
-			
-			<div id="workimg-div">
-				<img id="work-img" src="work.svg"/>
-			</div>
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <div id="email-div">
+          <input type="email" id="email" placeholder="Insert your e-mail here." required>
+        </div>
 
-			<div id="worktitle-div">
-				<p id="work-title">Get a job</p>
-				<p id="work-text">Completing our courses, you can easily find a job.</p>
-			</div>
-		
-			<div id="dateimg-div">
-				<img id="date-img" src="date.svg"/>
-			</div>
+        <div id="submit-div">
+          <input type="submit" id="submit" value="Send">
+        </div>
+      </form>
+    </div>
 
-			<div id="datetitle-div">
-				<p id="date-title">Learn daily</p>
-				<p id="date-text">With B1ts you can learn something new every day.</p>
-			</div>
-		</div>
+    <div id="main-list">
+      <div id="codeimg-div">
+        <img id="code-img" src="code.svg" />
+      </div>
 
-		<!-- Video -->
-		<div id="video-div">
-			<video id="video" width="320" height="240" controls>
-				<source src="" type="video/mp4">
-			</video>
-			<iframe id="frame" width="600" height="315" src="https://www.youtube.com/embed/YmWMi1kVCG8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
+      <div id="codetitle-div">
+        <p id="code-title">Perfect Courses</p>
+        <p id="code-text">Learn now very fast and in a smart way a language.</p>
+      </div>
 
-		<div id="package-div">
-			<div id="low-budget">
-				<h3 id="low-title">Easy Pack</h3>
-				<p id="low-description">299$</p>
-				<p id="low-description-2">With this pack you get 30 days of courses.</p>
-				<button type="button" id="low-button">Buy</button>
-			</div>
+      <div id="workimg-div">
+        <img id="work-img" src="work.svg" />
+      </div>
 
-			<div id="mid-budget">
-				<h3 id="mid-title">Normal Pack</h3>
-				<p id="mid-description">499$</p>
-				<p id="low-description-2">With this pack you get 90 days of courses.</p>
-				<button type="button" id="mid-button">Buy</button>
-			</div>
-			
-			<div id="high-budget">
-				<h3 id="high-title">Legendary Pack</h3>
-				<p id="high-description">999$</p>
-				<p id="high-description-2">With this pack you get 180 days of courses.</p>
-				<button type="button" id="high-button">Buy</button>
-			</div>
-		</div>
-	</header>
+      <div id="worktitle-div">
+        <p id="work-title">Get a job</p>
+        <p id="work-text">Completing our courses, you can easily find a job.</p>
+      </div>
+
+      <div id="dateimg-div">
+        <img id="date-img" src="date.svg" />
+      </div>
+
+      <div id="datetitle-div">
+        <p id="date-title">Learn daily</p>
+        <p id="date-text">With B1ts you can learn something new every day.</p>
+      </div>
+    </div>
+
+    <div id="video-div">
+      <video id="video" width="320" height="240" controls>
+        <source src="" type="video/mp4">
+      </video>
+
+      <iframe
+        id="frame"
+        width="600"
+        height="315"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media"
+        src="https://www.youtube.com/embed/YmWMi1kVCG8"
+      >
+      </iframe>
+    </div>
+
+    <div id="package-div">
+      <div id="low-budget">
+        <h3 id="low-title">Easy Pack</h3>
+        <p id="low-description">299$</p>
+        <p id="low-description-2">With this pack you get 30 days of courses.</p>
+        <button type="button" id="low-button">Buy</button>
+      </div>
+
+      <div id="mid-budget">
+        <h3 id="mid-title">Normal Pack</h3>
+        <p id="mid-description">499$</p>
+        <p id="low-description-2">With this pack you get 90 days of courses.</p>
+        <button type="button" id="mid-button">Buy</button>
+      </div>
+
+      <div id="high-budget">
+        <h3 id="high-title">Legendary Pack</h3>
+        <p id="high-description">999$</p>
+        <p id="high-description-2">With this pack you get 180 days of courses.</p>
+        <button type="button" id="high-button">Buy</button>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
