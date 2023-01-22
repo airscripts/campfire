@@ -1,0 +1,179 @@
+#body {
+  width: 100%;
+  margin: auto;
+  background: radial-gradient(circle, #43a047, #66bb6a, #43a047);
+}
+
+#title-div {
+  text-align: center;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+#form-section {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #f0f0f0;
+  padding-bottom: 20px;
+}
+
+#description {
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+#survey-form {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.position {
+  display: grid;
+  margin-left: 50px;
+  margin-right: 50px;
+  grid-template-columns: 50% 50%;
+}
+
+.survey-format {
+  font-size: 14px;
+  margin-top: 7px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.input-format {
+  height: 30px;
+}
+
+#name::placeholder {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+#email::placeholder {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+#number::placeholder {
+  font-family: 'Raleway', 'sans-serif';
+}
+
+#dropdown option {
+  font-family: 'Raleway', 'sans-serif' !important;
+}
+
+#dropdown select {
+  font-family: 'Raleway', 'sans-serif' !important;
+}
+
+
+.wrapper-1 {
+  display: grid;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+
+.sub-wrapper-1 {
+  margin-left: 30px;
+  text-align: right;
+  margin-right: 30px;
+  text-align-last: right;
+}
+
+.unlist {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+#textarea-div {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30% 30%;
+}
+
+#textarea {
+  resize: vertical;
+}
+
+#textarea-label {
+  font-size: 14px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+#submit-div {
+  display: grid;
+  justify-content: center;
+}
+
+#submit {
+  height: 30px;
+  border: none;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+  background: #43a047;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+
+@media (max-width: 700px) {
+  #form-section {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  #body {
+    width: 320px;
+  }
+
+  #form-section {
+    width: 320px;
+    max-width: 400px;
+  }
+
+  .position {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+
+  .survey-format {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-1 {
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: 80%;
+    justify-content: flex-start;
+  }
+
+  .sub-wrapper-1 {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    text-align-last: left;
+  }
+
+  #textarea-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80%;
+  }
+
+  #textarea-label {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
