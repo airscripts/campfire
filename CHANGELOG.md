@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 &nbsp;
 
+## 🎉 1.8.0
+
+### What's Changed
+* feat(jaads): add caesar cipher project by @Airscripts in https://github.com/Airscripts/campfire/pull/35
+
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.7.0...1.8.0  
+&nbsp;
+
 ## 🎉 1.7.0
 
 ### What's Changed
