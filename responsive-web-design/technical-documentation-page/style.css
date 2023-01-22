@@ -1,0 +1,64 @@
+#body {
+  width: 100%;
+  display: grid;
+
+  grid-template-areas:
+    'navbar documentation';
+
+  font-family: 'Trebuchet MS';
+  grid-template-columns: 320px auto;
+}
+
+#main-doc {
+  margin-left: 20px;
+  grid-area: documentation;
+}
+
+.paragraphs {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.codes-div {
+  background: #f0f0f0;
+  padding: 20px 0 20px 20px;
+  margin: 20px 40px 20px 40px;
+}
+
+#navbar {
+  position: fixed;
+  grid-area: navbar;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  #body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px auto;
+
+    grid-template-areas:
+      'navbar'
+      'documentation';
+
+    font-family: 'Trebuchet MS';
+  }
+
+  #navbar {
+    overflow-y: auto;
+    grid-area: navbar;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    text-align: center;
+  }
+}
