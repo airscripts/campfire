@@ -1,62 +1,62 @@
 #app {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #app-settings {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: -100px;
+  justify-content: center;
 }
 
 #app-break {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin-right: 100px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #app-break-contents {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #app-session {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #app-session-contents {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #app-clock {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 #app-actions {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .settings-button {
-  margin-right: 25px;
-  font-size: 18px;
   width: 50px;
+  font-size: 18px;
+  margin-right: 25px;
 }

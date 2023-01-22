@@ -6,11 +6,12 @@ import "./App.css";
 
 function App() {
   const [rest, setRest] = useState(5);
+  const [seconds, setSeconds] = useState(0);
   const [session, setSession] = useState(25);
   const [minutes, setMinutes] = useState(25);
-  const [seconds, setSeconds] = useState(0);
-  const [typology, setTypology] = useState("session");
   const [status, setStatus] = useState("stop");
+  const [typology, setTypology] = useState("session");
+
   const audioRef = useRef();
 
   useEffect(() => {
@@ -39,9 +40,7 @@ function App() {
 
     if (status === "play") {
       interval = setInterval(() => {
-        if (!minutes && !seconds) {
-          return;
-        }
+        if (!minutes && !seconds) return;
 
         if (!seconds) {
           setSeconds(59);
@@ -84,8 +83,8 @@ function App() {
 
             <button
               id="break-increment"
-              className="btn btn-light settings-button"
               style={{ marginRight: 0 }}
+              className="btn btn-light settings-button"
               onClick={() => setTime(rest, "break", "+")}
             >
               +
@@ -115,8 +114,8 @@ function App() {
 
             <button
               id="session-increment"
-              className="btn btn-light settings-button"
               style={{ marginRight: 0 }}
+              className="btn btn-light settings-button"
               onClick={() => setTime(session, "session", "+")}
             >
               +
@@ -128,8 +127,8 @@ function App() {
       <div
         id="app-clock"
         style={{
-          marginTop: 50,
           fontSize: 36,
+          marginTop: 50,
         }}
       >
         <p id="timer-label">
@@ -145,8 +144,8 @@ function App() {
         <button
           id="start_stop"
           className="btn"
-          style={{ marginRight: 10, fontSize: 36 }}
           onClick={() => play()}
+          style={{ marginRight: 10, fontSize: 36 }}
         >
           {status === "stop" ? (
             <i className="fas fa-play" style={{ color: "white" }}></i>
@@ -158,8 +157,8 @@ function App() {
         <button
           id="reset"
           className="btn"
-          style={{ fontSize: 36 }}
           onClick={() => reset()}
+          style={{ fontSize: 36 }}
         >
           <i className="fas fa-redo" style={{ color: "white" }}></i>
         </button>
@@ -180,7 +179,6 @@ function App() {
   function reset() {
     audioRef.current.pause();
     audioRef.current.currentTime = 0;
-
     setInitialState();
   }
 
@@ -194,9 +192,7 @@ function App() {
   }
 
   function setTime(time, type, operator) {
-    if (status === "play") {
-      return;
-    }
+    if (status === "play") return;
 
     switch (time) {
       case 1:
@@ -227,10 +223,7 @@ function App() {
   }
 
   function renderTime(time) {
-    if (time < 10) {
-      return "0" + time;
-    }
-
+    if (time < 10) return "0" + time;
     return time;
   }
 }
