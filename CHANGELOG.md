@@ -1,20 +1,22 @@
 # Changelog
-All notable changes to this project will be documented in this file.  
+All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
-&nbsp;
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 🎉 1.16.0
+
+### What's Changed
+* feat(fedl): add random quote machine project by @elgorditosalsero in https://github.com/Airscripts/campfire/pull/44
+
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.15.0...1.16.0
 
 ## 🎉 1.15.0
 
 ### What's Changed
 * feat(fedl): add markdown previewer project by @elgorditosalsero in https://github.com/Airscripts/campfire/pull/41
 
-### New Contributors
-* @elgorditosalsero made their first contribution in https://github.com/Airscripts/campfire/pull/41
-
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.14.0...1.15.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.14.0...1.15.0
 
 ## 🎉 1.14.0
 
@@ -24,112 +26,98 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### New Contributors
 * @elgorditosalsero made their first contribution in https://github.com/Airscripts/campfire/pull/43
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.13.0...1.14.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.13.0...1.14.0
 
 ## 🎉 1.13.0
 
 ### What's Changed
 * feat(fedl): add javascript calculator project by @Airscripts in https://github.com/Airscripts/campfire/pull/40
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.12.0...1.13.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.12.0...1.13.0
 
 ## 🎉 1.12.0
 
 ### What's Changed
 * feat(bedaa): add cash register project by @Airscripts in https://github.com/Airscripts/campfire/pull/39
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.11.0...1.12.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.11.0...1.12.0
 
 ## 🎉 1.11.0
 
 ### What's Changed
 * feat(bedaa): add request header parser microservice project by @Airscripts in https://github.com/Airscripts/campfire/pull/38
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.10.0...1.11.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.10.0...1.11.0
 
 ## 🎉 1.10.0
 
 ### What's Changed
 * feat(bedaa): add timestamp microservice project by @Airscripts in https://github.com/Airscripts/campfire/pull/37
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.9.0...1.10.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.9.0...1.10.0
 
 ## 🎉 1.9.0
 
 ### What's Changed
 * feat(jaads): add telephone number validator project by @Airscripts in https://github.com/Airscripts/campfire/pull/36
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.8.0...1.9.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.8.0...1.9.0
 
 ## 🎉 1.8.0
 
 ### What's Changed
 * feat(jaads): add caesar cipher project by @Airscripts in https://github.com/Airscripts/campfire/pull/35
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.7.0...1.8.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.7.0...1.8.0
 
 ## 🎉 1.7.0
 
 ### What's Changed
 * feat(jaads): add roman numeral converter project by @Airscripts in https://github.com/Airscripts/campfire/pull/34
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.6.0...1.7.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.6.0...1.7.0
 
 ## 🎉 1.6.0
 
 ### What's Changed
 * feat(jaads): add palindrome checker project by @Airscripts in https://github.com/Airscripts/campfire/pull/33
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.5.0...1.6.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.5.0...1.6.0
 
 ## 🎉 1.5.0
 
 ### What's Changed
 * feat(rwd): add tribute page project by @Airscripts in https://github.com/Airscripts/campfire/pull/31
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.4.0...1.5.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.4.0...1.5.0
 
 ## 🎉 1.4.0
 
 ### What's Changed
 * feat(rwd): add product landing page project by @Airscripts in https://github.com/Airscripts/campfire/pull/29
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.3.0...1.4.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.3.0...1.4.0
 
 ## 🎉 1.3.0
 
 ### What's Changed
 * feat(rwd): add survey form project by @Airscripts in #27
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.2.0...1.3.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.2.0...1.3.0
 
 ## 🎉 1.2.0
 
 ### What's Changed
 * feat: add technical documentation page project by @Airscripts in #24
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.1.0...1.2.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.1.0...1.2.0
 
 ## 🎉 1.1.0
 
 ### What's Changed
 * feat: add personal portfolio project into responsive web design by @Airscripts in #6
 
-**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.0.0...1.1.0  
-&nbsp;
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.0.0...1.1.0
 
 ## 🎉 1.0.0
 
