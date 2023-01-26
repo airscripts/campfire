@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 🎉 1.17.0
+
+### What's Changed
+* feat(fedl): add drum machine project by @Airscripts in https://github.com/Airscripts/campfire/pull/45
+
+**Full Changelog**: https://github.com/Airscripts/campfire/compare/1.16.0...1.17.0
+
 ## 🎉 1.16.0
 
 ### What's Changed
