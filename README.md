@@ -38,5 +38,5 @@ Choose what you find more suitable for you:
   <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/kofi.svg" alt="Kofi" width="30px" />
 </a>
 
-## 💳 License
+## License
 This repository is licensed under [GPL-3.0 License](https://github.com/airscripts/campfire/blob/main/LICENSE).
